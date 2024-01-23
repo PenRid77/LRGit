@@ -17,6 +17,7 @@ namespace LR2
                
                     Dot dot = new Dot(data[i][0], data[i][indexY]);
                     dots.Add(dot);
+
             }
             return dots.ToArray();
 
