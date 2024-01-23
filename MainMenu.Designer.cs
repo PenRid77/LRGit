@@ -55,7 +55,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(185, 64);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Открыть медианную зарплату";
+            this.button2.Text = "Открыть статистику бега";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // chart1
