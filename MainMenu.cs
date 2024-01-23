@@ -95,6 +95,10 @@ namespace LR2
             return listViewItems;
 
         }
-      
+        private void ShowPopulationStats(object sender, EventArgs e)
+        {
+            ShowedPopulationStats?.Invoke();
+        }
+
     }
 }

@@ -8,7 +8,7 @@ namespace LR2
 {
     public interface IMainView : IView
     {
-      
+        event Action ShowedPopulationStats;
         void DrawData(List<List<string>> data);
         void DrawGraphic(Dot[] dots);
         void ClearGraphic();
