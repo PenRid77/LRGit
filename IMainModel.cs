@@ -9,5 +9,6 @@ namespace LR2
     interface IMainModel
     {
         List<List<string>> GetData(string filePath);
+
     }
 }
