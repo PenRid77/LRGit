@@ -15,6 +15,7 @@ namespace LR2
     {
        
         public event Action ShowedRunnerStats;
+        public event Action ShowedPopulationStats;
         public MainMenu()
         {
             InitializeComponent();
@@ -105,6 +106,9 @@ namespace LR2
         {
             ShowedRunnerStats?.Invoke();
         }
-
+        private void ShowPopulationStats(object sender, EventArgs e)
+        {
+            ShowedPopulationStats?.Invoke();
+        }
     }
 }
