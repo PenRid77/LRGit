@@ -13,7 +13,8 @@ namespace LR2
 {
     public partial class MainMenu : Form, IMainView
     {
-        public event Action ShowedPopulationStats;
+       
+        public event Action ShowedRunnerStats;
         public MainMenu()
         {
             InitializeComponent();
@@ -40,7 +41,8 @@ namespace LR2
             foreach (var item in listViewItems)
             {
                 listView1.Items.Add(item);
-            }
+           
+          }
 
 
 
@@ -48,11 +50,14 @@ namespace LR2
         public void DrawGraphic(Dot[] dots)
         {
            Series series = new Series();
+            series.Name = "Chart" + (chart1.Series.Count - 1).ToString();
+            var rand = new Random();
             series.ChartType = SeriesChartType.Line;
+            series.Color = Color.FromArgb(255, rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256));
             chart1.Series.Add(series);
             for (int i = 0; i < dots.Length; i++)
             {
-                chart1.Series[0].Points.AddXY(dots[i].X, dots[i].Y);
+                chart1.Series[chart1.Series.Count-1].Points.AddXY(dots[i].X, dots[i].Y);
 
             }
 
@@ -95,9 +100,10 @@ namespace LR2
             return listViewItems;
 
         }
-        private void ShowPopulationStats(object sender, EventArgs e)
+     
+        private void ShowRunnerStats(object sender, EventArgs e)
         {
-            ShowedPopulationStats?.Invoke();
+            ShowedRunnerStats?.Invoke();
         }
 
     }

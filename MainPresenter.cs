@@ -16,7 +16,8 @@ namespace LR2
         {
             _view = view;
             _model = model;
-            _view.ShowedPopulationStats += ShowPopulationStats;
+          
+            _view.ShowedRunnerStats += ShowRunnerStats;
         }
         public void Run()
         {
@@ -24,13 +25,18 @@ namespace LR2
           
         
         }
-        private void ShowPopulationStats()
+       
+        private void ShowRunnerStats()
         {
 
-            List<List<string>> data = _model.GetData("dataNaselenie.csv");
+            List<List<string>> data = _model.GetData("dataBeg.csv");
+            List<List<float>> dataChart = DataConverter.ConvertStringToFloat(data);
             _view.DrawData(data);
             _view.ClearGraphic();
-            _view.DrawGraphic(GraphicCalculactor.CalculateGraphicDots(DataConverter.ConvertStringToFloat(data)));
+            for (int i = 0; i < dataChart[0].Count; i++)
+            {
+                _view.DrawGraphic(GraphicCalculactor.CalculateGraphicDots(dataChart, i));
+            }
         }
     }
 }
