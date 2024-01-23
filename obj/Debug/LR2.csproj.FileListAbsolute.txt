@@ -1,0 +1,10 @@
+C:\Users\Danil\source\repos\LR2\LR2\bin\Debug\LR2.exe.config
+C:\Users\Danil\source\repos\LR2\LR2\bin\Debug\LR2.exe
+C:\Users\Danil\source\repos\LR2\LR2\bin\Debug\LR2.pdb
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.csproj.AssemblyReference.cache
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.Properties.Resources.resources
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.csproj.GenerateResource.cache
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.csproj.CoreCompileInputs.cache
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.exe
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.pdb
+C:\Users\Danil\source\repos\LR2\LR2\obj\Debug\LR2.MainMenu.resources
