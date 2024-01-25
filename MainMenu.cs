@@ -27,7 +27,7 @@ namespace LR2
         {
             Application.Run(this);
         }
-        public void DrawData(List<List<string>> data)
+        public void DrawData(List<List<string>> data, float searchingNumber)
         {
 
            
@@ -43,7 +43,8 @@ namespace LR2
             {
                 listView1.Items.Add(item);
            
-          }
+             }
+            label3.Text = "Искомое значение:" + searchingNumber.ToString();
 
 
 

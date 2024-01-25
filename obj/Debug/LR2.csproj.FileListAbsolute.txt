@@ -18,3 +18,13 @@ C:\Users\Danil\Desktop\laba\obj\Debug\LR2.csproj.GenerateResource.cache
 C:\Users\Danil\Desktop\laba\obj\Debug\LR2.csproj.CoreCompileInputs.cache
 C:\Users\Danil\Desktop\laba\obj\Debug\LR2.exe
 C:\Users\Danil\Desktop\laba\obj\Debug\LR2.pdb
+C:\Users\Danil\Desktop\LRGit-master\bin\Debug\LR2.exe.config
+C:\Users\Danil\Desktop\LRGit-master\bin\Debug\LR2.exe
+C:\Users\Danil\Desktop\LRGit-master\bin\Debug\LR2.pdb
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.csproj.AssemblyReference.cache
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.MainMenu.resources
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.Properties.Resources.resources
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.csproj.GenerateResource.cache
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.csproj.CoreCompileInputs.cache
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.exe
+C:\Users\Danil\Desktop\LRGit-master\obj\Debug\LR2.pdb

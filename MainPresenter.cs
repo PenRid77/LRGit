@@ -32,7 +32,17 @@ namespace LR2
 
             List<List<string>> data = _model.GetData("dataBeg.csv");
             List<List<float>> dataChart = DataConverter.ConvertStringToFloat(data);
-            _view.DrawData(data);
+            float sum = 0;
+            for (int i = 1; i < data.Count; i++)
+            {
+                if (data[i][data[i].Count-1] == "Суббота" || data[i][data[i].Count - 1] == "Воскресенье")
+                {
+                    sum += dataChart[i-1][1];
+                }
+
+
+            }
+            _view.DrawData(data, sum);
             _view.ClearGraphic();
             for (int i = 0; i < dataChart[0].Count; i++)
             {
@@ -43,7 +53,16 @@ namespace LR2
         {
 
             List<List<string>> data = _model.GetData("dataNaselenie.csv");
-            _view.DrawData(data);
+            List<List<float>> dataChart = DataConverter.ConvertStringToFloat(data);
+            Console.WriteLine(dataChart[0][0]);
+            float middle = 0;
+            float sum = 0;
+            for (int i = 2;i < dataChart.Count; i++)
+            {
+                sum += (dataChart[i-1][1] - dataChart[i - 2][1]); 
+            }
+            middle = sum / dataChart.Count;
+            _view.DrawData(data, middle);
             _view.ClearGraphic();
             _view.DrawGraphic(GraphicCalculactor.CalculateGraphicDots(DataConverter.ConvertStringToFloat(data), 1));
         }

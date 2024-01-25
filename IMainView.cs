@@ -11,7 +11,7 @@ namespace LR2
        
         event Action ShowedRunnerStats;
         event Action ShowedPopulationStats;
-        void DrawData(List<List<string>> data);
+        void DrawData(List<List<string>> data, float searchingNumber);
         void DrawGraphic(Dot[] dots);
         void ClearGraphic();
 
